@@ -9,4 +9,8 @@ RSpec.describe "count_words" do
   it "should return 0 for empty string " do
     expect(count_words("")).to eq 0
   end
+  it "should return 1 even when there are white spaces" do 
+    result = count_words("  Hello  ")
+    expect(result).to eq 1
+    end 
 end

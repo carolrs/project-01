@@ -1,4 +1,4 @@
 def count_words(str)
-  str.split.size
-
+  checking_white_space = str.lstrip
+  return checking_white_space.split.size
 end
